@@ -1,4 +1,7 @@
 package ejerciciopnt;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
 
 
 public class EjercicioPNT {
@@ -19,7 +22,7 @@ public class EjercicioPNT {
 
 	Collections.sort(prodLst);
 
-	for (producto p : prdList) {
+	for (producto p : prodLst) {
 	    System.out.println("Producto: " + p.toString());
 	}
 	System.out.println("Producto mas caro: " + Collections.max(prodLst).getNombre());
