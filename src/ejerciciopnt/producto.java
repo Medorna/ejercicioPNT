@@ -1,4 +1,4 @@
-package ejerciciopnt;
+ackage ejerciciopnt;
 
 //super clase Producto. 
 public class producto implements Comparable<producto> {
@@ -17,11 +17,20 @@ public class producto implements Comparable<producto> {
         
 
     }
+
+    public int getPrecio() {
+        return precio;
+    }
     
     //??????????????????? wtf... ? 
     @Override
     public int compareTo(producto t) {
-        return 1;
+        if (t.getPrecio() > this.getPrecio())
+            return 1;
+	else
+            return -1;
+	return 0;
     }
+
 }
 
