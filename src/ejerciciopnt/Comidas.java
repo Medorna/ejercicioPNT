@@ -22,5 +22,4 @@ public class Comidas extends Producto {
 
         return "Nombre: " + nombre + " /// " + "Precio: $" + precio + " /// " + "Unidad de venta: " + unidadPeso;
     }
-
 }
